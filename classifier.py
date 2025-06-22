@@ -8,13 +8,10 @@ from keras.layers.normalization.batch_normalization_v1 import BatchNormalization
 import numpy as np
 from keras.callbacks import EarlyStopping, Callback
 
-# Define a custom callback to print loss during training
+
 class PrintLossCallback(Callback):  
     def on_epoch_end(self, epoch, logs=None):
         logs = logs or {}
-        
-
-
 
 from sklearn.svm import SVC
 from sklearn.multiclass import OneVsRestClassifier
