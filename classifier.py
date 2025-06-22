@@ -9,10 +9,10 @@ import numpy as np
 from keras.callbacks import EarlyStopping, Callback
 
 # Define a custom callback to print loss during training
-class PrintLossCallback(Callback):   # 每次训练一个 epoch 后就会调用 PrintLossCallback 打印损失
+class PrintLossCallback(Callback):  
     def on_epoch_end(self, epoch, logs=None):
         logs = logs or {}
-        print(f"Epoch {epoch+1}/{self.params['epochs']}, Loss: {logs.get('loss')}")
+        
 
 
 
